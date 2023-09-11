@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 from typing import List
 
-from habi.apps.property.domain.models.models import Connection
+from src.apps.property.domain.models.models import Connection
 
 
 class ConnectionRepository(ABC):

@@ -3,16 +3,16 @@ from urllib.parse import urlparse, parse_qs
 
 import marshmallow
 
-from habi.apps.property.domain.property_finder import PropertyFinder
-from habi.apps.property.domain.serializer import (
+from src.apps.property.domain.property_finder import PropertyFinder
+from src.apps.property.domain.serializer import (
     OutListPropertySerializer, IngressPropertySerializer
 )
-from habi.apps.property.infrastructure.connection_mysql import ConnectionMysql
-from habi.apps.property.infrastructure.finder_mysql import FinderPropertyHabi
+from src.apps.property.infrastructure.connection_mysql import ConnectionMysql
+from src.apps.property.infrastructure.finder_mysql import FinderPropertyHabi
 import json
 
-from habi.utils import loggers
-from habi.utils.exceptions import ValidationError
+from src.utils import loggers
+from src.utils.exceptions import ValidationError
 
 logger = loggers.setup_logger(logger_name=__name__)
 

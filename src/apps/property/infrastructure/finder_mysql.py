@@ -1,13 +1,13 @@
 from typing import Optional, Dict, Any
 
-from habi.apps.property.application.connection import ConnectionRepository
-from habi.apps.property.application.finder import PropertyRepository
-from habi.apps.property.domain.models.models import ParamsProperty
-from habi.apps.property.infrastructure.strategy.get_property import GetProperty
-from habi.apps.property.infrastructure.validators.get_property import (
+from src.apps.property.application.connection import ConnectionRepository
+from src.apps.property.application.finder import PropertyRepository
+from src.apps.property.domain.models.models import ParamsProperty
+from src.apps.property.infrastructure.strategy.get_property import GetProperty
+from src.apps.property.infrastructure.validators.get_property import (
     ValidateState
 )
-from habi.utils import loggers
+from src.utils import loggers
 
 logger = loggers.setup_logger(logger_name=__name__)
 

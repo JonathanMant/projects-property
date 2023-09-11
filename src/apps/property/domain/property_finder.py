@@ -1,6 +1,6 @@
 from typing import Dict, Any
 
-from habi.apps.property.application.finder import PropertyRepository
+from src.apps.property.application.finder import PropertyRepository
 
 
 class PropertyFinder:

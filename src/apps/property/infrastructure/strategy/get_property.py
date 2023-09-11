@@ -1,8 +1,8 @@
 import abc
 from typing import Dict, List
 
-from habi.apps.property.domain.models.models import ParamsProperty
-from habi.utils.strategy import AbstractStrategy
+from src.apps.property.domain.models.models import ParamsProperty
+from src.utils.strategy import AbstractStrategy
 
 
 class AbstractPropertyStrategy(AbstractStrategy):

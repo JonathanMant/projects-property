@@ -1,8 +1,8 @@
 import abc
 from typing import Any, Optional
 
-from habi.apps.property.application.connection import ConnectionRepository
-from habi.utils.validator import AbstractValidation
+from src.apps.property.application.connection import ConnectionRepository
+from src.utils.validator import AbstractValidation
 
 
 class AbstractStrategy(abc.ABC):

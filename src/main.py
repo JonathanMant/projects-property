@@ -1,13 +1,13 @@
-"""Console script for habi."""
+"""Console script for src."""
 import sys
 import click
 
 
 @click.command()
 def main(args=None):
-    """Console script for habi."""
+    """Console script for src."""
     click.echo("Replace this message by putting your code into "
-               "habi.cli.main")
+               "src.cli.main")
     click.echo("See click documentation at https://click.palletsprojects.com/")
     return 0
 

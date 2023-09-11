@@ -2,11 +2,11 @@ from typing import List
 
 import pytest
 
-from habi.apps.property.application.connection import ConnectionRepository
-from habi.apps.property.domain.models.models import Connection
-from habi.apps.property.domain.property_finder import PropertyFinder
-from habi.apps.property.infrastructure.finder_mysql import FinderPropertyHabi
-from habi.utils.exceptions import ValidationError
+from src.apps.property.application.connection import ConnectionRepository
+from src.apps.property.domain.models.models import Connection
+from src.apps.property.domain.property_finder import PropertyFinder
+from src.apps.property.infrastructure.finder_mysql import FinderPropertyHabi
+from src.utils.exceptions import ValidationError
 
 
 class FakeConnectionRepository(ConnectionRepository):
@@ -56,9 +56,9 @@ class TestGetProperties:
 
     def test_get_properties_with_params_successful(self):
         params = {
-            'year': ['2000'],
-            'city': ['bogota'],
-            'state': ['pre_venta']
+            'year': '2000',
+            'city': 'bogota',
+            'state': 'pre_venta'
         }
 
         response = PropertyFinder(
@@ -116,7 +116,7 @@ class TestGetProperties:
 
     def test_get_properties_a_status_incorrect_error(self):
         params = {
-            'state': ['comprado']
+            'state': 'comprado'
         }
         with pytest.raises(ValidationError):
             response = PropertyFinder(
@@ -126,4 +126,4 @@ class TestGetProperties:
             ).search(
                 **params
             )
-            assert not response.get('return')
+            assert not response.get('response_data')
