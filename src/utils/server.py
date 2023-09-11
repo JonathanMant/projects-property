@@ -1,7 +1,7 @@
 from http.server import HTTPServer
 import os
 
-from habi.apps.property.domain.views import MiManejador
+from src.apps.property.domain.views import MiManejador
 
 env_path = '.env'
 

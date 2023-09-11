@@ -52,7 +52,7 @@ pip install -r .\requirements.txt
 ````
 3. Correr el comando. El cual nos ayudara a realizar peticiones HTTP
 ````commandline
-python habi/utils/server.py
+python src/utils/server.py
 ````
 
 ## Dudas

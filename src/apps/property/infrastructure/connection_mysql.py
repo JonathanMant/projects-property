@@ -3,11 +3,11 @@ from typing import List
 
 import mysql.connector
 
-from habi.apps.property.application.connection import (
+from src.apps.property.application.connection import (
     ConnectionRepository
 )
 
-from habi.apps.property.domain.models.models import Connection
+from src.apps.property.domain.models.models import Connection
 
 
 class ConnectionMysql(ConnectionRepository):
